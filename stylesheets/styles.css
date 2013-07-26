@@ -50,7 +50,7 @@ a small {
   /* was 860 */
   width:500px;
   margin:0 auto;
-  position:relative;
+  /* position:relative */;
 }
 
 blockquote {
