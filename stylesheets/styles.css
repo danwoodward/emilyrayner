@@ -1,12 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
-  padding:50px;
+  padding:10px 50px 50px 50px;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#6b645c;
   font-weight:300;
   background:#fffbe3;
 }
+
+
+.center {text-align:center;}
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
@@ -103,8 +106,9 @@ header h1 {
 }
 
 
-header .header-top {text-align:center;}
+header .header-top {text-align:center;margin-top:30px;}
 header img {max-width:300px;}
+
 
 .profile-image {margin-bottom:20px;}
 
@@ -190,6 +194,14 @@ hr {
   height:1px;
   margin:0 0 20px;
 }
+
+
+
+a.birthday-mode-btn {font-weight:bold;color:#adafa2;}
+a.birthday-mode-btn.active, a.birthday-mode-btn.active:hover  {color:#ff00e1;}
+a.birthday-mode-btn:hover {color:#ce00b5;}
+
+.bday-mode {display:none;}
 
 
 footer {

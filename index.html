@@ -6,7 +6,6 @@
     <title>Emily Rayner by danwoodward</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,19 +15,22 @@
     <div class="wrapper">
     
     
-<div style="position: absolute; z-index: 10; outline: 0px; top: 120px; right: 40%; -webkit-transition: all 0.1s linear; transition: all 0.1s linear; -webkit-transform: rotate(-1deg) scale(0.91, 0.91);"><img src="images/unicorn_6.gif"></div> 
+<div class="bday-mode" style="position: absolute; z-index: 10; outline: 0px; top: 120px; right: 40%; -webkit-transition: all 0.1s linear; transition: all 0.1s linear; -webkit-transform: rotate(-1deg) scale(0.91, 0.91);"><img src="images/unicorn_6.gif"></div> 
 
 
     
   
       <header>
+        <div class="center">Birthday Mode: <a href="#" data-state="bday-on" class="birthday-mode-btn">ON</a> / <a href="#" data-state="bday-off" class="fn-bday-off birthday-mode-btn active">OFF</a></div>
         <div class="header-top">
+          
+        
           <h1>Emily Rayner</h1>
           <img src="images/headshot1.png" width="100%" class="profile-image" />
 
 
 
-<!-- <a href="http://www.cornify.com" onclick="cornify_add();return false;"><img src="http://www.cornify.com/assets/cornifybig.gif" width="82" height="25" border="0" alt="Cornify" /></a><script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script> -->
+<!-- <a href="http://www.cornify.com" onclick="cornify_add();return false;"><img src="http://www.cornify.com/assets/cornifybig.gif" width="82" height="25" border="0" alt="Cornify" /></a><script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>  -->
 
         </div>
 
@@ -48,16 +50,40 @@
         <p><a href="#">Email</a> • <a href="#">Twitter</a> • <a href="#">Facebook</a></p>
       </footer>
     </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="javascripts/scale.fix.js"></script>
+    <script>
+      $(".birthday-mode-btn").on("click", function(){
+        var state   = $(this).data('state');
+        var theBtn  = this
+
+        switch (state) {
+
+          case "bday-on":
+            $(".bday-mode").show();
+            $(".birthday-mode-btn").removeClass("active");
+            $(theBtn).addClass("active");
+            break;
+          case "bday-off":
+            $(".bday-mode").hide();
+            $(".birthday-mode-btn").removeClass("active");
+            $(theBtn).addClass("active");
+            break;
+
+        }
+
+
+      });
+    </script>
      
-<div style="position: absolute; z-index: -1; outline: 0px; top: 50px; right:43%; -webkit-transition: all 0.1s linear; transition: all 0.1s linear; -webkit-transform: rotate(20deg) scale(0.91, 0.91);"><img src="images/rainbow_5.gif"></div>      
+<div class="bday-mode" style="position: absolute; z-index: -1; outline: 0px; top: 50px; right:43%; -webkit-transition: all 0.1s linear; transition: all 0.1s linear; -webkit-transform: rotate(20deg) scale(0.91, 0.91);"><img src="images/rainbow_5.gif"></div>      
      
 
 
 
 
-<div style="position: fixed; z-index: 10; outline: 0px; bottom: 11%; left: 11%; -webkit-transition: all 0.1s linear; transition: all 0.1s linear; -webkit-transform: rotate(-0deg) scale(0.91, 0.91);"><img src="images/unicorn_3.gif"></div>    
-
+<div class="bday-mode" style="position: fixed; z-index: 10; outline: 0px; bottom: 15%; left: 18%; -webkit-transition: all 0.1s linear; transition: all 0.1s linear; -webkit-transform: rotate(-0deg) scale(0.91, 0.91);"><img src="images/unicorn_3.gif"></div>    
+<div class="bday-mode" style="position: fixed; z-index: 10; outline: 0px; top: 11%; right: 11%; -webkit-transition: all 0.1s linear; transition: all 0.1s linear; -webkit-transform: rotate(-0deg) scale(0.50, 0.50);"><img src="images/supercorn.gif"></div>
           
       
     
